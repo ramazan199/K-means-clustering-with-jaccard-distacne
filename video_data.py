@@ -425,3 +425,28 @@ learn
 # VideosTags5 = '''g
 # h
 # y'''
+
+listVT = [VideosTags1, VideosTags2, VideosTags3, VideosTags4, VideosTags5, VideosTags6,
+ VideosTags7, VideosTags8, VideosTags9, VideosTags10, VideosTags11, VideosTags12, VideosTags13,
+ VideosTags14, VideosTags15, VideosTags16, VideosTags17, VideosTags18, VideosTags19, VideosTags20]
+
+listVT2 = [i.lower().replace('(','').replace(")","").replace("\n"," ").split(" ") for i in listVT]
+listVT3 = [set(i) for i in listVT2]
+	
+videos_with_their_tag_lst = {'Eminem LY' : listVT3[0], 'Eminem NOt afraid': listVT3[1], 'Twenty21 on ride': listVT3[2], 'Twenty21 bla bla': listVT3[3], 
+'Four black cats meow': listVT3[4],
+'Mother cat meow and hisses at me' : listVT3[5], 
+'6IX9INE- GOOBA (Official Music Video)': listVT3[6],
+'Future - Life Is Good (Official Music Video) ft. Drake': listVT3[7],
+'SNOWRUNNER Gameplay Walkthrough Part 30 - FREE DERRY LONGHORN & CHAIN TIRES': listVT3[8],
+'SnowRunner Top Twitch Funny Moments Compilation | SnowRunner GAMEPLAY Trucking Simulator Games': listVT3[9],
+'Coolio - Gangstas Paradise (feat. L.V.) [Official Music Video]': listVT3[10],
+'Gorillaz - Clint Eastwood (Official Video)': listVT3[11],
+'Gorillaz - Feel Good Inc. (Official Video)': listVT3[12],
+'Gorillaz - On Melancholy Hill (Official Video)': listVT3[13],
+'2pac feat Dr.Dre - California Love HD' : listVT3[14],
+'2Pac - Hit Em Up (Dirty) (Official Video) HD': listVT3[15],
+'a Cat - "Mooo!" ': listVT3[16],
+'CS:GOs Grenade Blast Update': listVT3[17], 
+'Making a Jacobs Ladder to Celebrate a Million Subs': listVT3[18],
+'How NOT to Make an Electric Guitar (The Hazards of Electricity)': listVT3[19]}
