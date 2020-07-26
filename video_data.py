@@ -433,7 +433,7 @@ listVT = [VideosTags1, VideosTags2, VideosTags3, VideosTags4, VideosTags5, Video
 listVT2 = [i.lower().replace('(','').replace(")","").replace("\n"," ").split(" ") for i in listVT]
 listVT3 = [set(i) for i in listVT2]
 	
-videos_with_their_tag_lst = {'Eminem LY' : listVT3[0], 'Eminem NOt afraid': listVT3[1], 'Twenty21 on ride': listVT3[2], 'Twenty21 bla bla': listVT3[3], 
+videos_with_their_tags_dct = {'Eminem LY' : listVT3[0], 'Eminem NOt afraid': listVT3[1], 'Twenty21 on ride': listVT3[2], 'Twenty21 bla bla': listVT3[3], 
 'Four black cats meow': listVT3[4],
 'Mother cat meow and hisses at me' : listVT3[5], 
 '6IX9INE- GOOBA (Official Music Video)': listVT3[6],
@@ -450,3 +450,6 @@ videos_with_their_tag_lst = {'Eminem LY' : listVT3[0], 'Eminem NOt afraid': list
 'CS:GOs Grenade Blast Update': listVT3[17], 
 'Making a Jacobs Ladder to Celebrate a Million Subs': listVT3[18],
 'How NOT to Make an Electric Guitar (The Hazards of Electricity)': listVT3[19]}
+
+# print (videos_with_their_tags_dct)
+
