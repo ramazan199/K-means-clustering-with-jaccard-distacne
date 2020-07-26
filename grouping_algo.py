@@ -2,6 +2,7 @@
 from data_generation import fake_data_generation
 from collections import OrderedDict 
 from collections import Counter
+from plotting import plotting
 import random
 
 N_ITTER = 100
@@ -156,5 +157,9 @@ def main():
 
 	print ("max score:", max_ccg_score, "\n")
 	print ("best group with this score:", "\n", central_groups_dct_best, "\n")
+
+	plotting(central_groups_dct_best, videos_with_their_tags_dct)
+	
+	
 		
 main()
