@@ -1,3 +1,3 @@
 # likeUlike
 
-Algortihm for grouping videos
+Algorithm for grouping videos
